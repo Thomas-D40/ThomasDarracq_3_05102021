@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+#checked {
+  display: none;
+}
+
+.menu {
+  margin: 10px auto;
+  width: 90%;
+  height: 70px;
+  margin-bottom: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-left: 2%;
+  opacity: 0;
+  animation: card-apparition 1s ease-in-out both;
+}
+.menu--1 {
+  animation-delay: 0.075s;
+}
+.menu--2 {
+  animation-delay: 0.15s;
+}
+.menu--3 {
+  animation-delay: 0.225s;
+}
+.menu__title {
+  margin: 10px 0 10px 0;
+  letter-spacing: 0.2px;
+  font-size: 1.1rem;
+}
+.menu__text {
+  text-align: start;
+  font-weight: 100;
+  max-height: 1em;
+  margin: 0;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s ease-in-out;
+}
+.menu__price {
+  font-weight: bold;
+  display: block;
+  position: relative;
+  height: 100%;
+  right: 0;
+  text-align: end;
+  padding-top: 41px;
+  padding-right: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.menu__checked {
+  background-color: #99E2D0;
+  color: white;
+  height: 100%;
+  width: 60px;
+  right: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 100% 50%;
+}
+.menu__checked i {
+  font-size: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.menu:hover .menu__text, .menu:active .menu__text {
+  width: 65%;
+}
+.menu:hover .menu__price, .menu:active .menu__price {
+  transform: translateX(-60px);
+}
+.menu:hover .menu__checked, .menu:active .menu__checked {
+  transform: scaleX(1);
+}
+.menu:hover .menu__checked i, .menu:active .menu__checked i {
+  transform: rotate(360deg);
+}
+
+@keyframes card-apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
