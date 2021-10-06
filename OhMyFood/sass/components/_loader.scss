@@ -1,0 +1,36 @@
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    animation: loader 3s ease-in-out 1s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__text {
+        font-family: 'Shrikhand', cursive;
+        font-size: 10vw;
+        text-align: center;
+        background: $gradient;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__ellipsis {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            &__point {
+            width: 7vw;
+            height: 7vw;
+            background: $gradient;
+            border-radius: 50%;
+            margin: 10% 5%;
+            animation: point $loader-point-duration ease-in-out backwards infinite alternate;
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: $loader-point-delay * $i;
+                }
+            }
+            }
+    }
+}

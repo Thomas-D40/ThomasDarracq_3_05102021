@@ -1,0 +1,15 @@
+@mixin pseudo-elmt {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+@mixin bottom-elmt {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
