@@ -5,51 +5,46 @@
     align-items: center;
     background: darken($colour-background, 5%);
     &__icon {
-        padding-right: 25px;
+        padding-right: 15px;
     }
     &__text {
-        padding-right: 9%;
+        font-weight: 500;
     }
 }
 
 .abstract {
-    height: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     &__title {
-        font-size: 1.8em;
-        margin: 40px 5% 0 5%;
+        font-size: 1.45em;
+        margin: 40px 15% 0 15%;
     }
     &__text {
-        font-size: 1.2em;
-        margin: 15px 5% 30px 5%;
+        font-size: 1.1em;
+        margin: 10px 5% 30px 5%;
         font-weight: 300;
     }
     &__button {
-        color: white;
-        background: $gradient;
-        width: 220px;
-        height: 50px;
-        border-radius: 45px;
-        border: none;
-        font-size: 1em;
-        box-shadow: 0px 0px 7px rgba(71,31,19,0.58);;
+        margin-bottom: 55px;
     }
 }
 
 .operation {
     background-color: white;
-    height: 440px;
     padding-left: 5.3%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
     &__title {
-        padding-top: 50px;
+        font-size: 1.45em;
+        padding-top: 28px;
+        padding-bottom: 10px;
+        width: 100%;
     }
     &__button {
-        height: 70px;
+        height: 75px;
         width: 92%;
         background: $colour-background;
         border-radius: 20px;
@@ -97,24 +92,44 @@
             }
             
         }
+        @media all and (min-width: 992px) {
+            width: 30%;
+            margin-bottom: 50px;
+        }
 
+    }
+    @media all and (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 5%;
     }
 }
 
-.restaurant {
+.restaurants {
+    width: 94%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding-left: 5.3%;
     padding-bottom: 20px;
     &__title {
         margin-top: 60px;
+        width: 100%;
     }
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5%;
+    }
+
 }
 
 .card {
     height: 250px;
     width: 94%;
     margin-bottom: 20px;
+    margin-right: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -122,7 +137,7 @@
     &__img {
         height: 170px;
         object-fit: cover;
-        flex-shrink: -1;
+        flex-shrink: 0;
     }
     &__body {
         background: white;
@@ -148,17 +163,7 @@
             left: 85%;
             display: flex;
             &--hover {
-                transform: translateX(-100%);
-                background: #9356DC;
-                background: -webkit-linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-                background: -moz-linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-                background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                opacity: 0;
-                transition: opacity 300ms ease-in-out;
-                transform-origin: bottom;
+                @include heart-hover
             }
         
             &:hover {
@@ -168,37 +173,10 @@
             }
         }
     }
-}
-
-.footer {
-    background-color: $background-footer;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-left: 6%;
-    font-size: 1em;
-    &__title {
-        color: white;
-        font-family: "Shrikhand", cursive;
-        font-size: 1.1em;
-        letter-spacing: 0.1px;
-        margin-bottom: 20px;
-    }
-    &__icon{
-        @include bottom-elmt;
-        font-size: 0.75em;
-        width: 15px;
-    }
-    &__partner {
-        @include bottom-elmt;
-    }
-    &__link {
-        @include bottom-elmt;
-        font-weight: 300;
+    @media all and (min-width: 768px) {
+        width: 45%;
     }
 }
-
 
 
 
