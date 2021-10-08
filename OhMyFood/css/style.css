@@ -435,6 +435,7 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  position: relative;
 }
 .card__img {
   height: 170px;
@@ -481,6 +482,23 @@ body {
 }
 .card__body__favorite:hover .card__body__favorite--hover {
   opacity: 1;
+}
+.card__new {
+  position: absolute;
+  top: 5.6%;
+  left: 72%;
+  height: 12%;
+  width: 23%;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__new__text {
+  color: #278870;
+  font-weight: 500;
+  font-size: 0.85em;
 }
 @media all and (min-width: 768px) {
   .card {
