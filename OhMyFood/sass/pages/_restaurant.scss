@@ -30,7 +30,7 @@
         &--hover {
             @include heart-hover;
         }
-        &:hover {
+        &:hover, &:focus {
             .restaurant__favorite--hover {
                 opacity: 1;
             }

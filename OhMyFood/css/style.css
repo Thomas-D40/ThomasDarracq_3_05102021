@@ -37,6 +37,14 @@ body {
   margin: 0;
 }
 
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked .restaurant__favorite--hover {
+  opacity: 1;
+}
+
 .loader {
   height: 100vh;
   width: 100%;
@@ -480,7 +488,7 @@ body {
   transition: opacity 300ms ease-in-out;
   transform-origin: bottom;
 }
-.card__body__favorite:hover .card__body__favorite--hover {
+.card__body__favorite:hover .card__body__favorite--hover, .card__body__favorite:focus .card__body__favorite--hover {
   opacity: 1;
 }
 .card__new {
@@ -550,7 +558,7 @@ body {
   transition: opacity 300ms ease-in-out;
   transform-origin: bottom;
 }
-.restaurant__favorite:hover .restaurant__favorite--hover {
+.restaurant__favorite:hover .restaurant__favorite--hover, .restaurant__favorite:focus .restaurant__favorite--hover {
   opacity: 1;
 }
 @media all and (min-width: 992px) {

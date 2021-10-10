@@ -167,7 +167,7 @@
                 @include heart-hover
             }
         
-            &:hover {
+            &:hover, &:focus {
                 .card__body__favorite--hover {
                     opacity: 1;
                 }
