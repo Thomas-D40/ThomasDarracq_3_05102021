@@ -46,14 +46,15 @@ body {
 }
 
 .loader {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: white;
   animation: loader 0.5s ease-in-out 2.5s forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
+  position: fixed;
+  cursor: wait;
   top: 0;
   left: 0;
   z-index: 2;
