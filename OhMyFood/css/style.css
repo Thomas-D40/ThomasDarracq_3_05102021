@@ -372,11 +372,18 @@ body {
   font-size: 0.9em;
 }
 .operation__button__icon {
+  width: 25px;
   font-size: 1.2em;
   color: #858585;
-  padding-right: 25px;
-  position: relative;
   z-index: 1;
+}
+.operation__button__icon--hover {
+  width: 25px;
+  color: #9356DC;
+  font-size: 1.2em;
+  z-index: 1;
+  transform: translateX(-99%);
+  opacity: 0;
 }
 .operation__button__text {
   font-weight: 500;
@@ -397,8 +404,8 @@ body {
 .operation__button:hover::after {
   opacity: 1;
 }
-.operation__button:hover .operation__button__icon {
-  color: #9356DC;
+.operation__button:hover .operation__button__icon--hover {
+  opacity: 1;
 }
 @media all and (min-width: 992px) {
   .operation__button {
