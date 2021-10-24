@@ -37,14 +37,6 @@ body {
   margin: 0;
 }
 
-.checkbox {
-  display: none;
-}
-
-.checkbox:checked .restaurant__favorite--hover {
-  opacity: 1;
-}
-
 .loader {
   height: 100%;
   width: 100%;

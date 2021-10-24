@@ -11,13 +11,3 @@ body {
     background-color: $colour-background;
     margin: 0;
 }
-
-.checkbox {
-    display: none;
-}
-
-.checkbox:checked {
-    .restaurant__favorite--hover {
-        opacity: 1;
-    }
-}
