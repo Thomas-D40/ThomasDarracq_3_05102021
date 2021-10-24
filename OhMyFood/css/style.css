@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 @keyframes card-apparition {
   0% {
     opacity: 0;
@@ -144,7 +144,7 @@ body {
   margin: 15px 0 5px 0;
   letter-spacing: 0.2px;
   font-size: 1.1rem;
-  font-weight: 550;
+  font-weight: 500;
   width: 90%;
   white-space: nowrap;
   overflow: hidden;
@@ -318,6 +318,7 @@ body {
 .abstract__title {
   font-size: 1.45em;
   margin: 40px 15% 0 15%;
+  font-weight: 700;
 }
 .abstract__text {
   font-size: 1.1em;
