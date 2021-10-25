@@ -6,10 +6,14 @@
     background: darken($colour-background, 5%);
     &__icon {
         padding-right: 15px;
+        transform: translateX(25px);
     }
-    &__text {
+    &__input {
         font-weight: 500;
         font-size: 1em;
+        border: none;
+        background: darken($colour-background, 5%);
+        transform: translateX(25px);
     }
 }
 
